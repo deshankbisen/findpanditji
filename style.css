@@ -131,16 +131,18 @@ header nav ul li a:focus {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .service {
     width: 30%;
-    background: #d48989;
+    background: #fff;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    margin: 1rem 0;
 }
 
 .service img {
@@ -148,8 +150,8 @@ header nav ul li a:focus {
     border-radius: 5px;
 }
 
-.service:hover {
-    transform: translateY(-10px);
+.service h3 {
+    margin-top: 1rem;
 }
 
 /* How It Works */
@@ -175,15 +177,18 @@ header nav ul li a:focus {
 
 .steps {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .step {
     width: 20%;
+    margin: 1rem 0;
 }
 
 .step img {
     width: 100%;
+    border-radius: 5px;
 }
 
 /* Testimonials */
@@ -210,6 +215,7 @@ header nav ul li a:focus {
 
 .testimonial-carousel {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -219,6 +225,7 @@ header nav ul li a:focus {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
 }
 
 .testimonial p {
@@ -253,4 +260,39 @@ footer .social-media a {
 
 footer .social-media a:hover {
     color: #f4b400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services, .steps, .testimonial-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .step, .testimonial {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar select, .search-bar button {
+        width: 80%;
+        margin: 0.5rem 0;
+    }
 }
