@@ -71,7 +71,44 @@
             </div>
         </div>
     </section>
-
+    <button id="registerPanditjiBtn">Be a Pandit Ji</button>
+    <!-- Popup Form -->
+<div id="panditjiPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Register as Pandit Ji</h2>
+        <form id="panditjiForm" enctype="multipart/form-data">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+            
+            <label for="speciality">Speciality:</label>
+            <input type="text" id="speciality" name="speciality" required>
+            
+            <label for="experience">Experience (in years):</label>
+            <input type="number" id="experience" name="experience" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required>
+            
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required>
+            
+            <label for="fileUpload">Upload Document (JPG, PDF, PNG):</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".jpg, .jpeg, .png, .pdf" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
     <!-- How It Works -->
     <section class="how-it-works">
         <div class="container">
